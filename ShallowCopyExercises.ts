@@ -245,3 +245,28 @@ if (lodashLib) {
   console.log("Merge (profundo)", mergedProfile);
   console.log("CloneDeep (independiente)", deepCloned);
 }
+/**
+ * Exacto, es una buena forma de verlo, pero no es una intersección completa. Es más bien:
+
+merge() = fusión donde el segundo objeto sobrescribe coincidencias
+
+Con arrays, se comporta así:
+
+Compara índice por índice
+Si ambos tienen elemento en el mismo índice → el segundo reemplaza al primero
+Si el primero tiene más elementos → se mantienen
+Si el segundo tiene más elementos → se añaden
+ */
+
+console.log("\n========== RESUMEN RÁPIDO ==========");
+// TODO: Completa estas oraciones después de resolver todos los ejercicios:
+// 1. Los primitivos siempre se copian por: _________________
+// 2. Un objeto SIN spread se copia por: _________________
+// 3. Un objeto CON {...} se copia por: _________________ (pero solo nivel superior)
+// 4. Los objetos anidados con {...} se copian por: _________________
+// 5. JSON.parse(JSON.stringify()) hace una: _________________ copy
+// 6. structuredClone() hace una: _________________ copy
+// 7. Un array SIN spread se copia por: _________________
+// 8. Un array CON [...] se copia por: _________________ (pero solo el array)
+// 9. Los objetos dentro de un array CON [...] se copian por: _________________
+// 10. Para hacer una copia completamente independiente de objetos y arrays usa: _________________
